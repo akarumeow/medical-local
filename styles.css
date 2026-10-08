@@ -214,8 +214,8 @@ cite{display:block;margin-top:25px;font-size:12px;font-style:normal;color:var(--
   .nav{min-height:72px}
   .brand{width:118px}
   .logo-img{width:110px;height:110px;margin:-18px 0}
-  .menu-toggle{position:relative;z-index:110;display:flex;flex-direction:row;justify-content:center;align-items:center;gap:5px;width:34px;height:38px;margin-left:auto;padding:5px;border:0;background:none;cursor:pointer}
-  .menu-toggle span{width:2px;height:24px;margin:0;background:#000;transition:transform .25s ease, opacity .2s ease}
+  .menu-toggle{position:relative;z-index:110;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:34px;height:38px;margin-left:auto;padding:5px;border:0;background:none;cursor:pointer}
+  .menu-toggle span{width:24px;height:2px;margin:0;background:#000;transition:transform .25s ease, opacity .2s ease}
   .nav-links{
     position:fixed;
     inset:0;
