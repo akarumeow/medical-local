@@ -214,8 +214,8 @@ cite{display:block;margin-top:25px;font-size:12px;font-style:normal;color:var(--
   .nav{min-height:72px}
   .brand{width:118px}
   .logo-img{width:110px;height:110px;margin:-18px 0}
-  .menu-toggle{position:relative;z-index:110;display:flex;flex-direction:column;justify-content:center;align-items:center;width:30px;height:30px;margin-left:auto}
-  .menu-toggle span{transition:transform .25s ease, opacity .2s ease}
+  .menu-toggle{position:relative;z-index:110;display:flex;flex-direction:row;justify-content:center;align-items:center;gap:5px;width:34px;height:38px;margin-left:auto;padding:5px;border:0;background:none;cursor:pointer}
+  .menu-toggle span{width:2px;height:24px;margin:0;background:var(--ink);transition:transform .25s ease, opacity .2s ease}
   .nav-links{
     position:fixed;
     inset:0;
@@ -227,24 +227,25 @@ cite{display:block;margin-top:25px;font-size:12px;font-style:normal;color:var(--
     background:#f3f3f3;
     padding:42px 0 50px 0;
     box-shadow:none;
-    align-items:flex-start;
-    justify-content:flex-start;
+    align-items:center;
+    justify-content:center;
     overflow-y:auto;
   }
   .nav-links.open{display:flex}
   .nav-links a{
-    display:none;
+    display:block;
     width:100%;
-    padding:0 16px 0 52px;
+    padding:7px 20px;
     font-family:var(--serif);
-    font-size:clamp(32px,8vw,58px);
+    font-size:clamp(26px,7vw,36px);
     line-height:1.15;
-    letter-spacing:-.02em;
+    letter-spacing:0;
     color:#111;
     font-weight:600;
     text-transform:none;
+    text-align:center;
   }
-  .nav-links .nav-button{display:none;margin-top:12px;padding-left:52px;padding-right:16px;border-radius:0;background:none;color:#111!important}
+  .nav-links .nav-button{display:block;margin-top:10px;padding:7px 20px;border-radius:0;background:none;color:#111!important}
   .nav-links .nav-button:hover{background:none}
   .nav-close{
     position:relative;
