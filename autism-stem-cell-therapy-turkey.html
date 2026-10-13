@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261008-horizontal-menu">
+  <link rel="stylesheet" href="styles.css?v=20261008-language-menu">
 </head>
 <body>
 
@@ -25,8 +25,16 @@
     <nav class="nav-links" aria-label="Главное меню">
       <button class="nav-close" type="button" aria-label="Закрыть меню">
         <span class="close-mark">×</span>
-        <span class="close-text">Close</span>
+        <span class="close-text">Закрыть</span>
       </button>
+      <label class="language-switcher">
+        <span class="visually-hidden">Язык</span>
+        <select class="language-select" aria-label="Язык">
+          <option value="ru">Русский</option>
+          <option value="en">English</option>
+          <option value="ro">Română</option>
+        </select>
+      </label>
       <a href="index.html#home">Главная</a>
       <a href="index.html#about">О нас</a>
       <a href="index.html#services">Услуги</a>
@@ -117,6 +125,7 @@
   <div class="copyright">© <span id="year"></span> Medical Concierge Group. Все права защищены.</div>
 </footer>
 
+<script src="translations.js?v=20261008-russian-fix"></script>
 <script src="script.js"></script>
 </body>
 </html>

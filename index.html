@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261008-horizontal-menu">
+  <link rel="stylesheet" href="styles.css?v=20261010-service-tabs">
 </head>
 <body>
 
@@ -25,8 +25,16 @@
     <nav class="nav-links" aria-label="Главное меню">
       <button class="nav-close" type="button" aria-label="Закрыть меню">
         <span class="close-mark">×</span>
-        <span class="close-text">Close</span>
+        <span class="close-text">Закрыть</span>
       </button>
+      <label class="language-switcher">
+        <span class="visually-hidden">Язык</span>
+        <select class="language-select" aria-label="Язык">
+          <option value="ru">Русский</option>
+          <option value="en">English</option>
+          <option value="ro">Română</option>
+        </select>
+      </label>
       <a href="#home">Главная</a>
       <a href="#about">О нас</a>
       <a href="#services">Услуги</a>
@@ -82,7 +90,14 @@
         <p>Основные направления медицинского сопровождения.</p>
       </div>
 
-      <div class="service-grid">
+      <div class="service-filters" role="group" aria-label="Категории услуг">
+        <button class="service-filter is-active" type="button" data-service-filter="all" aria-pressed="true">Все услуги</button>
+        <button class="service-filter" type="button" data-service-filter="services" aria-pressed="false">Наши услуги</button>
+        <button class="service-filter" type="button" data-service-filter="genetic" aria-pressed="false">Генетические тесты</button>
+        <a class="service-filter-booking" href="#contact">Забронировать онлайн</a>
+      </div>
+
+      <div class="service-grid" data-service-group="services">
         <article class="service-card">
           <div class="service-icon">01</div>
           <h3>Трансплантация почки</h3>
@@ -111,19 +126,51 @@
           <a href="#contact">Подробнее →</a>
         </article>
 
-        <article class="service-card">
-          <div class="service-icon">05</div>
-          <h3>Генетические тесты</h3>
-          <p>Информация о доступных тестах и помощь в организации консультации.</p>
-          <a href="#contact">Подробнее →</a>
-        </article>
-
         <article class="service-card featured">
-          <div class="service-icon">06</div>
+          <div class="service-icon">05</div>
           <h3>Индивидуальное сопровождение</h3>
           <p>Персональная координация медицинского маршрута под вашу ситуацию.</p>
           <a href="#contact">Получить консультацию →</a>
         </article>
+      </div>
+
+      <div class="genetic-tests" data-service-group="genetic">
+        <div class="section-heading genetic-tests-heading">
+          <h2>Генетические тесты</h2>
+        </div>
+        <div class="genetic-tests-grid">
+          <article class="genetic-test-card">
+            <img src="https://images.unsplash.com/photo-1530210124550-912dc1381cb8?auto=format&fit=crop&w=900&q=85" alt="Лабораторный анализ и молекула ДНК">
+            <div class="genetic-test-content">
+              <p>Жидкостная биопсия для пациентов с прогрессирующими солидными опухолями. Панель исследует 740 генов, включая гены слияния, MSI, TMB и HRR, а также оценивает долю опухолевой ДНК. Применимость и результаты оценивает врач.</p>
+              <h3>Guardant360® powered by Infinity™</h3>
+            </div>
+          </article>
+
+          <article class="genetic-test-card">
+            <img src="https://images.unsplash.com/photo-1530210124550-912dc1381cb8?auto=format&fit=crop&w=900&q=85" alt="Лабораторный анализ и молекула ДНК">
+            <div class="genetic-test-content">
+              <p>Комплексное исследование ДНК и РНК (WES/WTS), оценка HRD, gLOH, MSI, TMB и MMR, типирование HLA, кариотипирование, а также анализ генов и белковых маркеров (IHC, CISH, FISH, FOLR1). Состав зависит от клинической задачи.</p>
+              <h3>Caris MI Profile™</h3>
+            </div>
+          </article>
+
+          <article class="genetic-test-card">
+            <img src="https://images.unsplash.com/photo-1530210124550-912dc1381cb8?auto=format&fit=crop&w=900&q=85" alt="Лабораторный анализ и молекула ДНК">
+            <div class="genetic-test-content">
+              <p>Геномный тест для оценки BRCA1/BRCA2 и ещё 13 генов, связанных с раком яичников, а также геномной нестабильности (LOH, TAI, LST). Результаты могут помочь врачу при выборе тактики лечения.</p>
+              <h3>MyChoice® CDx Plus</h3>
+            </div>
+          </article>
+
+          <article class="genetic-test-card">
+            <img src="https://images.unsplash.com/photo-1530210124550-912dc1381cb8?auto=format&fit=crop&w=900&q=85" alt="Лабораторный анализ и молекула ДНК">
+            <div class="genetic-test-content">
+              <p>Мультигенный тест, учитывающий личную и семейную историю, для оценки наследственного риска 11 распространённых видов рака. Результаты следует обсуждать с врачом или генетическим консультантом.</p>
+              <h3>MyRisk™</h3>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -319,6 +366,7 @@
   <div class="copyright">© <span id="year"></span> Medical Concierge Group. Все права защищены.</div>
 </footer>
 
+<script src="translations.js?v=20261010-service-tabs"></script>
 <script src="script.js"></script>
 </body>
 </html>

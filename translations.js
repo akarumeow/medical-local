@@ -1,0 +1,359 @@
+const languageCopy = {
+  "Главная": ["Home", "Acasă"],
+  "О нас": ["About us", "Despre noi"],
+  "Услуги": ["Services", "Servicii"],
+  "Блог": ["Blog", "Blog"],
+  "Отзывы": ["Reviews", "Recenzii"],
+  "Контакты": ["Contact", "Contact"],
+  "Записаться онлайн": ["Book online", "Programare online"],
+  "Закрыть": ["Close", "Închide"],
+  "Язык": ["Language", "Limbă"],
+  "Добро пожаловать!": ["Welcome!", "Bine ați venit!"],
+  "Персональная медицинская координация, экспертные консультации и сопровождение пациентов на каждом этапе лечения.": ["Personalized medical coordination, expert consultations, and patient support at every stage of treatment.", "Coordonare medicală personalizată, consultații de specialitate și sprijin pentru pacienți în fiecare etapă a tratamentului."],
+  "Наши услуги": ["Our services", "Serviciile noastre"],
+  "Связаться с нами": ["Contact us", "Contactați-ne"],
+  "Ваш путь к медицинской помощи — спокойно и понятно": ["Your path to medical care — clear and reassuring", "Drumul dumneavoastră către îngrijire medicală — clar și fără griji"],
+  "Мы помогаем организовать медицинские консультации и лечение, координируя коммуникацию с клиниками и специалистами.": ["We help arrange medical consultations and treatment by coordinating communication with clinics and specialists.", "Vă ajutăm să organizați consultații și tratamente medicale, coordonând comunicarea cu clinicile și specialiștii."],
+  "Наша задача — сделать международное медицинское сопровождение максимально понятным, последовательным и персональным.": ["Our goal is to make international medical support clear, seamless, and personalized.", "Scopul nostru este să facem sprijinul medical internațional cât mai clar, coerent și personalizat."],
+  "ЧТО МЫ ПРЕДЛАГАЕМ": ["WHAT WE OFFER", "CE OFERIM"],
+  "Наши услуги": ["Our services", "Serviciile noastre"],
+  "Основные направления медицинского сопровождения.": ["Our main areas of medical coordination.", "Principalele domenii de coordonare medicală."],
+  "Категории услуг": ["Service categories", "Categorii de servicii"],
+  "Все услуги": ["All services", "Toate serviciile"],
+  "Генетические тесты": ["Genetic Testing", "Teste genetice"],
+  "Забронировать онлайн": ["Book online", "Rezervați online"],
+  "Трансплантация почки": ["Kidney transplantation", "Transplant renal"],
+  "Организация консультации и координация процесса обращения в клинику.": ["Consultation arrangements and coordination of your clinic enquiry.", "Organizarea consultației și coordonarea solicitării către clinică."],
+  "Подробнее →": ["Learn more →", "Află mai multe →"],
+  "Онкологическое лечение": ["Cancer care", "Tratament oncologic"],
+  "Помощь с консультациями специалистов и подготовкой медицинских материалов.": ["Help arranging specialist consultations and preparing medical records.", "Ajutor pentru programarea consultațiilor de specialitate și pregătirea documentelor medicale."],
+  "Детский аутизм": ["Autism support for children", "Sprijin pentru copiii cu autism"],
+  "Координация обращения и консультаций по программам помощи детям.": ["Coordination of enquiries and consultations about support programmes for children.", "Coordonarea solicitărilor și consultațiilor privind programele de sprijin pentru copii."],
+  "Пластическая хирургия": ["Plastic surgery", "Chirurgie plastică"],
+  "Сопровождение при подборе консультации и организации поездки.": ["Support in arranging a consultation and planning your trip.", "Sprijin pentru programarea consultației și organizarea călătoriei."],
+  "Информация о доступных тестах и помощь в организации консультации.": ["Information about available tests and help arranging a consultation.", "Informații despre testele disponibile și ajutor pentru organizarea consultației."],
+  "Лабораторный анализ и молекула ДНК": ["Laboratory analysis and a DNA molecule", "Analiză de laborator și o moleculă de ADN"],
+  "Жидкостная биопсия для пациентов с прогрессирующими солидными опухолями. Панель исследует 740 генов, включая гены слияния, MSI, TMB и HRR, а также оценивает долю опухолевой ДНК. Применимость и результаты оценивает врач.": ["A liquid biopsy for patients with advanced solid tumors. The panel examines 740 genes, including fusion genes, MSI, TMB, and HRR, and estimates the tumor DNA fraction. A physician determines whether the test is appropriate and interprets the results.", "O biopsie lichidă pentru pacienții cu tumori solide avansate. Panelul analizează 740 de gene, inclusiv gene de fuziune, MSI, TMB și HRR, și estimează fracția de ADN tumoral. Medicul stabilește dacă testul este potrivit și interpretează rezultatele."],
+  "Guardant360® powered by Infinity™": ["Guardant360® powered by Infinity™", "Guardant360® powered by Infinity™"],
+  "Комплексное исследование ДНК и РНК (WES/WTS), оценка HRD, gLOH, MSI, TMB и MMR, типирование HLA, кариотипирование, а также анализ генов и белковых маркеров (IHC, CISH, FISH, FOLR1). Состав зависит от клинической задачи.": ["Comprehensive DNA and RNA testing (WES/WTS), assessment of HRD, gLOH, MSI, TMB, and MMR, HLA typing, karyotyping, and analysis of genes and protein markers (IHC, CISH, FISH, FOLR1). The panel depends on the clinical question.", "Analiză complexă ADN și ARN (WES/WTS), evaluarea HRD, gLOH, MSI, TMB și MMR, tipizare HLA, cariotipare și analiza genelor și a markerilor proteici (IHC, CISH, FISH, FOLR1). Panelul depinde de întrebarea clinică."],
+  "Геномный тест для оценки BRCA1/BRCA2 и ещё 13 генов, связанных с раком яичников, а также геномной нестабильности (LOH, TAI, LST). Результаты могут помочь врачу при выборе тактики лечения.": ["A genomic test that assesses BRCA1/BRCA2 and 13 additional genes associated with ovarian cancer, as well as genomic instability (LOH, TAI, LST). Results may help a physician choose a treatment approach.", "Un test genomic care evaluează BRCA1/BRCA2 și alte 13 gene asociate cu cancerul ovarian, precum și instabilitatea genomică (LOH, TAI, LST). Rezultatele pot ajuta medicul să aleagă o abordare de tratament."],
+  "Мультигенный тест, учитывающий личную и семейную историю, для оценки наследственного риска 11 распространённых видов рака. Результаты следует обсуждать с врачом или генетическим консультантом.": ["A multigene test that considers personal and family history to assess inherited risk for 11 common cancers. Discuss results with a physician or genetic counselor.", "Un test multigenic care ia în considerare istoricul personal și familial pentru a evalua riscul ereditar pentru 11 tipuri frecvente de cancer. Discutați rezultatele cu un medic sau cu un consilier genetic."],
+  "Индивидуальное сопровождение": ["Personalized support", "Asistență personalizată"],
+  "Персональная координация медицинского маршрута под вашу ситуацию.": ["Personal coordination of a medical care journey tailored to your situation.", "Coordonarea personalizată a parcursului medical în funcție de situația dumneavoastră."],
+  "Получить консультацию →": ["Request a consultation →", "Solicită o consultație →"],
+  "КТО МЫ": ["WHO WE ARE", "CINE SUNTEM"],
+  "Мы специализируемся на медицинском сопровождении пациентов, которым требуется помощь в организации лечения за рубежом.": ["We specialize in supporting patients who need help arranging care abroad.", "Suntem specializați în sprijinirea pacienților care au nevoie de ajutor pentru organizarea tratamentului în străinătate."],
+  "Мы соединяем пациента, медицинских специалистов и клинику, помогая пройти путь от первичного обращения до дальнейшей координации лечения.": ["We connect patients with medical specialists and clinics, coordinating the process from the first enquiry through ongoing care arrangements.", "Facilităm legătura dintre pacienți, specialiști și clinici, coordonând procesul de la prima solicitare până la organizarea etapelor următoare."],
+  "Персональный подход": ["Personalized approach", "Abordare personalizată"],
+  "Медицинская координация": ["Medical coordination", "Coordonare medicală"],
+  "Поддержка на каждом этапе": ["Support at every step", "Sprijin la fiecare etapă"],
+  "КАК ЭТО РАБОТАЕТ": ["HOW IT WORKS", "CUM FUNCȚIONEAZĂ"],
+  "Четыре простых шага": ["Four simple steps", "Patru pași simpli"],
+  "Заявка": ["Enquiry", "Solicitare"],
+  "Вы рассказываете нам о своей ситуации.": ["Tell us about your situation.", "Ne povestiți despre situația dumneavoastră."],
+  "Консультация": ["Consultation", "Consultație"],
+  "Мы уточняем документы и медицинский запрос.": ["We review your documents and medical enquiry.", "Clarificăm documentele și solicitarea medicală."],
+  "Координация": ["Coordination", "Coordonare"],
+  "Организуем коммуникацию с подходящими специалистами.": ["We coordinate communication with suitable specialists.", "Coordonăm comunicarea cu specialiștii potriviți."],
+  "Сопровождение": ["Ongoing support", "Asistență continuă"],
+  "Остаёмся на связи в процессе организации лечения.": ["We stay in touch while your care is being arranged.", "Rămânem în legătură pe parcursul organizării tratamentului."],
+  "ПОЛЕЗНАЯ ИНФОРМАЦИЯ": ["USEFUL INFORMATION", "INFORMAȚII UTILE"],
+  "Последние статьи": ["Latest articles", "Articole recente"],
+  "ТРАНСПЛАНТАЦИЯ • 5 МИН": ["TRANSPLANTATION • 5 MIN", "TRANSPLANT • 5 MIN"],
+  "Важная информация о трансплантации, подготовке и медицинском сопровождении.": ["Key information about transplantation, preparation, and medical coordination.", "Informații importante despre transplant, pregătire și coordonare medicală."],
+  "Читать →": ["Read →", "Citește →"],
+  "ДЕТСКОЕ ЗДОРОВЬЕ • 6 МИН": ["CHILDREN’S HEALTH • 6 MIN", "SĂNĂTATEA COPIILOR • 6 MIN"],
+  "Что важно знать о терапии стволовыми клетками, её статусе и медицинском сопровождении.": ["What to know about stem-cell therapy, its current status, and medical coordination.", "Ce trebuie să știți despre terapia cu celule stem, statutul acesteia și coordonarea medicală."],
+  "ОНКОЛОГИЯ • 5 МИН": ["ONCOLOGY • 5 MIN", "ONCOLOGIE • 5 MIN"],
+  "Как разобраться в вариантах лечения и организовать консультацию за рубежом.": ["How to understand treatment options and arrange a consultation abroad.", "Cum să înțelegeți opțiunile de tratament și să organizați o consultație în străinătate."],
+  "ВОССТАНОВЛЕНИЕ ВОЛОС • 5 МИН": ["HAIR RESTORATION • 5 MIN", "RESTAURAREA PĂRULUI • 5 MIN"],
+  "О методах пересадки волос, подготовке и организации медицинской поездки.": ["An overview of hair-transplant methods, preparation, and planning a medical trip.", "Despre metodele de transplant de păr, pregătire și organizarea unei călătorii medicale."],
+  "ПЛАСТИЧЕСКАЯ ХИРУРГИЯ • 6 МИН": ["PLASTIC SURGERY • 6 MIN", "CHIRURGIE PLASTICĂ • 6 MIN"],
+  "Как оценить варианты процедуры, выбрать специалиста и подготовиться к консультации.": ["How to assess procedure options, choose a specialist, and prepare for a consultation.", "Cum să evaluați opțiunile procedurii, să alegeți un specialist și să vă pregătiți pentru consultație."],
+  "ОТЗЫВЫ": ["TESTIMONIALS", "PĂRERILE PACIENȚILOR"],
+  "Что говорят наши пациенты": ["What our patients say", "Ce spun pacienții noștri"],
+  "«Внимательное сопровождение и понятная коммуникация на каждом этапе.»": ["“Attentive support and clear communication at every step.”", "„Sprijin atent și comunicare clară la fiecare etapă.”"],
+  "«Команда помогла разобраться с организационными вопросами и консультацией.»": ["“The team helped us navigate the arrangements and consultation.”", "„Echipa ne-a ajutat să clarificăm aspectele organizatorice și consultația.”"],
+  "«Персональный подход и постоянная связь сделали процесс намного спокойнее.»": ["“Personalized support and regular communication made the process much less stressful.”", "„Abordarea personalizată și comunicarea constantă au făcut procesul mult mai liniștit.”"],
+  "— Светлана": ["— Svetlana", "— Svetlana"],
+  "— Владимир": ["— Vladimir", "— Vladimir"],
+  "— Мария": ["— Maria", "— Maria"],
+  "СВЯЖИТЕСЬ С НАМИ": ["GET IN TOUCH", "CONTACTAȚI-NE"],
+  "Расскажите, чем мы можем вам помочь": ["Tell us how we can help", "Spuneți-ne cum vă putem ajuta"],
+  "Оставьте заявку — мы свяжемся с вами и уточним детали вашего запроса.": ["Send us an enquiry and we’ll contact you to learn more about your needs.", "Trimiteți o solicitare, iar noi vă vom contacta pentru a afla mai multe detalii."],
+  "Кишинёв, ул. Штефан чел Маре, 130, оф. 15": ["130 Ștefan cel Mare Street, office 15, Chișinău", "Chișinău, str. Ștefan cel Mare 130, of. 15"],
+  "Ваше имя": ["Your name", "Numele dumneavoastră"],
+  "Телефон": ["Phone", "Telefon"],
+  "Сообщение": ["Message", "Mesaj"],
+  "Введите имя": ["Enter your name", "Introduceți numele"],
+  "+373 ...": ["+373 ...", "+373 ..."],
+  "Кратко опишите ваш запрос": ["Briefly describe your enquiry", "Descrieți pe scurt solicitarea"],
+  "Я согласен(на) на передачу контактных данных через FormSubmit для отправки заявки на электронную почту. Не указывайте в сообщении диагнозы и другие чувствительные медицинские данные.": ["I agree to the transfer of my contact details through FormSubmit to send this enquiry by email. Do not include diagnoses or other sensitive medical information in your message.", "Sunt de acord cu transmiterea datelor mele de contact prin FormSubmit pentru trimiterea solicitării prin e-mail. Nu includeți diagnostice sau alte date medicale sensibile în mesaj."],
+  "Отправить заявку": ["Send enquiry", "Trimite solicitarea"],
+  "Заявки обрабатываются сторонним сервисом FormSubmit.": ["Enquiries are processed by the third-party service FormSubmit.", "Solicitările sunt procesate de serviciul terț FormSubmit."],
+  "Медицинская координация и сопровождение пациентов.": ["Medical coordination and patient support.", "Coordonare medicală și sprijin pentru pacienți."],
+  "Навигация": ["Navigation", "Navigare"],
+  "Кишинёв, Молдова": ["Chișinău, Moldova", "Chișinău, Moldova"],
+  "Все права защищены.": ["All rights reserved.", "Toate drepturile rezervate."],
+  "Современная операционная клиники": ["A modern clinic operating room", "Sală de operație modernă a clinicii"],
+  "Ребёнок играет с игрушкой": ["A child playing with a toy", "Copil care se joacă cu o jucărie"],
+  "Оборудование в современной операционной": ["Equipment in a modern operating room", "Echipamente într-o sală de operație modernă"],
+  "Линия роста волос перед пересадкой": ["Hairline before a transplant", "Linia părului înainte de transplant"],
+  "Кабинет для косметических процедур в клинике": ["A clinic room for cosmetic procedures", "Cabinet pentru proceduri cosmetice într-o clinică"],
+  "Ко всем статьям": ["All articles", "Toate articolele"],
+  "← Ко всем статьям": ["← All articles", "← Toate articolele"],
+  "Пересадка почек в Турции: что вам нужно знать": ["Kidney Transplant in Turkey: What You Need to Know", "Transplantul renal în Turcia: ce trebuie să știți"],
+  "Трансплантация почки — это спасающая жизнь процедура, которая может значительно улучшить качество жизни людей, страдающих терминальной стадией почечной недостаточности. Для пациентов, нуждающихся в пересадке почки, поездка в Турцию для проведения этой медицинской процедуры может стать приемлемым вариантом.": ["A kidney transplant is a life-saving procedure that can significantly improve quality of life for people with end-stage kidney failure. For patients who need a kidney transplant, travelling to Türkiye for this medical procedure may be an option to consider.", "Transplantul renal este o procedură care salvează vieți și poate îmbunătăți semnificativ calitatea vieții persoanelor cu insuficiență renală în stadiu terminal. Pentru pacienții care au nevoie de un transplant renal, călătoria în Turcia pentru această procedură medicală poate fi o opțiune de luat în considerare."],
+  "Трансплантация — это жизненно важная процедура, которая может существенно улучшить качество жизни людей с терминальной стадией почечной недостаточности. Для пациентов, которым необходима пересадка почки, лечение в Турции может быть одним из рассматриваемых вариантов.": ["A kidney transplant is a life-saving procedure that can significantly improve quality of life for people with end-stage kidney disease. For patients who need a transplant, receiving care in Türkiye may be one option to consider.", "Transplantul renal este o procedură salvatoare de vieți, care poate îmbunătăți semnificativ calitatea vieții persoanelor cu insuficiență renală în stadiu terminal. Pentru pacienții care au nevoie de un transplant, tratamentul în Turcia poate fi o opțiune de luat în considerare."],
+  "Medical Concierge Group, оказывает помощь пациентам, желающим провести трансплантацию почки.": ["Medical Concierge Group assists patients who are considering a kidney transplant.", "Medical Concierge Group oferă sprijin pacienților care iau în considerare un transplant renal."],
+  "Прежде чем рассматривать возможность пересадки почки в Турции, следует учесть несколько ключевых факторов. Во-первых, важно понимать процесс трансплантации, включая критерии оценки потенциальных реципиентов и доноров, саму хирургическую процедуру и необходимый послеоперационный уход. Кроме того, пациенты должны знать о потенциальных рисках и осложнениях, связанных с трансплантацией почки, а также о долгосрочных последствиях пересаженного органа. Крайне важно, чтобы лица, рассматривающие возможность пересадки почки в Турции, проводили тщательное исследование и консультировались с медицинскими специалистами, чтобы убедиться в принятии обоснованного решения.": ["Before considering a kidney transplant in Türkiye, it is important to understand the process, including how potential recipients and donors are assessed, the surgery itself, and the required aftercare. Patients should also understand the possible risks and complications, as well as the long-term implications of a transplant. Anyone considering treatment abroad should research carefully and consult qualified medical professionals to make an informed decision.", "Înainte de a lua în considerare un transplant renal în Turcia, este important să înțelegeți procesul, inclusiv evaluarea potențialilor primitori și donatori, intervenția chirurgicală și îngrijirea postoperatorie necesară. Pacienții trebuie să cunoască și riscurile și complicațiile posibile, precum și implicațiile pe termen lung ale transplantului. Persoanele care iau în considerare tratamentul în străinătate ar trebui să se informeze temeinic și să consulte specialiști medicali calificați pentru a lua o decizie în cunoștință de cauză."],
+  "Medical Concierge Group оказывает поддержку и руководство на протяжении всего процесса, помогая пациентам разобраться в сложностях получения медицинской помощи в чужой стране. Помимо трансплантации почек, Medical Concierge Group предлагает ряд других медицинских услуг в Турции, включая лечение онкологии, пересадку печени, лечение детского аутизма, лечение стволовыми клетками и пластическую хирургию. Предлагая комплексный набор услуг, компания стремится удовлетворить разнообразные потребности своих клиентов и обеспечить индивидуальный подход к каждому человеку.": ["Medical Concierge Group provides guidance throughout the process and helps patients navigate the complexities of receiving care in another country. In addition to kidney-transplant coordination, the group supports a range of medical enquiries in Türkiye, including oncology, liver transplantation, care for children with autism, stem-cell treatment enquiries, and plastic surgery. Its aim is to respond to clients’ different needs with personalized coordination.", "Medical Concierge Group oferă îndrumare pe tot parcursul procesului și îi ajută pe pacienți să navigheze complexitatea accesului la îngrijire medicală într-o altă țară. Pe lângă coordonarea transplantului renal, grupul sprijină o gamă variată de solicitări medicale în Turcia, inclusiv oncologie, transplant hepatic, îngrijire pentru copiii cu autism, solicitări privind tratamentele cu celule stem și chirurgie plastică. Scopul său este să răspundă nevoilor diverse ale clienților prin coordonare personalizată."],
+  "Для людей, ищущих лечение за рубежом, особенно пересадку почек, Турция стала лучшим выбором благодаря своим медицинским учреждениям мирового класса, опытным медицинским специалистам и доступным вариантам лечения.": ["Türkiye is one destination considered by people seeking care abroad, including kidney transplantation. When comparing options, patients should assess the medical team, facility, proposed care plan, costs, and follow-up arrangements.", "Turcia este una dintre destinațiile luate în considerare de persoanele care caută tratament în străinătate, inclusiv transplant renal. La compararea opțiunilor, pacienții ar trebui să evalueze echipa medicală, instituția, planul propus, costurile și organizarea monitorizării."],
+  "При поддержке авторитетного организатора медицинского туризма, такого как Medical Concierge Group, пациенты могут получить необходимую им помощь, а также насладиться богатой культурой и гостеприимством Турции.": ["With support from a medical-travel coordinator such as Medical Concierge Group, patients can receive help with arrangements while planning a visit to Türkiye. A coordinator does not replace medical advice; treatment decisions remain between patients and their qualified clinicians.", "Cu sprijinul unui coordonator de călătorii medicale precum Medical Concierge Group, pacienții pot primi ajutor pentru organizare în timp ce își planifică vizita în Turcia. Coordonatorul nu înlocuiește sfatul medical; deciziile privind tratamentul aparțin pacienților și specialiștilor lor calificați."],
+  "Лечение аутизма с помощью трансплантации стволовых клеток в Турции: прорыв в медицине": ["Stem-Cell Therapy for Autism in Türkiye: What Families Should Know", "Terapia cu celule stem pentru autism în Turcia: ce trebuie să știe familiile"],
+  "Расстройство аутистического спектра (РАС) – это сложное нарушение нейроразвития, которое влияет на общение, поведение и социальное взаимодействие. Хотя традиционные методы поддержки, включая поведенческую терапию, могут быть полезны, терапия стволовыми клетками пока остаётся исследуемым подходом.": ["Autism spectrum disorder (ASD) is a complex neurodevelopmental condition that affects communication, behaviour, and social interaction. Support such as behavioural therapy may be helpful, while stem-cell therapy remains an investigational approach.", "Tulburarea de spectru autist (TSA) este o afecțiune complexă de neurodezvoltare care influențează comunicarea, comportamentul și interacțiunea socială. Sprijinul precum terapia comportamentală poate fi util, în timp ce terapia cu celule stem rămâne o abordare investigată."],
+  "Терапию стволовыми клетками изучают в качестве возможного направления исследований при расстройствах аутистического спектра. На сегодняшний день её эффективность и безопасность для лечения аутизма не установлены; такой подход не следует считать доказанным лечением.": ["Stem-cell therapy is being studied as a possible area of research for autism spectrum disorder. Its effectiveness and safety for treating autism have not been established, and it should not be considered a proven treatment.", "Terapia cu celule stem este studiată ca posibilă direcție de cercetare pentru tulburarea de spectru autist. Eficacitatea și siguranța sa în tratamentul autismului nu au fost stabilite și nu trebuie considerată un tratament dovedit."],
+  "Важно: не прекращайте и не заменяйте назначенную ребёнку помощь терапией стволовыми клетками. Обсудите любые варианты лечения с квалифицированным врачом. Уточните, проводится ли предлагаемая процедура в рамках надлежащим образом одобренного клинического исследования, и попросите врача объяснить возможные риски, доказательства и альтернативы.": ["Important: do not stop or replace your child’s prescribed care with stem-cell therapy. Discuss all treatment options with a qualified doctor. Ask whether a proposed procedure is part of a properly approved clinical trial, and ask the doctor to explain the evidence, potential risks, and alternatives.", "Important: nu întrerupeți și nu înlocuiți îngrijirea recomandată copilului cu terapia cu celule stem. Discutați toate opțiunile cu un medic calificat. Întrebați dacă procedura propusă face parte dintr-un studiu clinic aprobat corespunzător și solicitați explicații despre dovezi, riscuri și alternative."],
+  "Почему семьи рассматривают лечение в Турции?": ["Why do families consider care in Türkiye?", "De ce iau familiile în considerare îngrijirea în Turcia?"],
+  "Турция предлагает широкий спектр медицинских услуг и принимает пациентов из разных стран. При выборе клиники и программы важно проверить квалификацию специалистов, медицинские показания, лицензирование и независимые данные о безопасности и эффективности предлагаемого лечения.": ["Türkiye offers a wide range of medical services and welcomes patients from many countries. When choosing a clinic or programme, check practitioners’ qualifications, medical indications, licensing, and independent evidence on the safety and effectiveness of the proposed treatment.", "Turcia oferă o gamă largă de servicii medicale și primește pacienți din multe țări. La alegerea unei clinici sau a unui program, verificați calificările specialiștilor, indicațiile medicale, autorizarea și dovezile independente privind siguranța și eficacitatea tratamentului propus."],
+  "Заранее уточните, кто именно оценивает состояние ребёнка и принимает клинические решения.": ["Ask in advance who will assess your child and make clinical decisions.", "Întrebați din timp cine va evalua copilul și va lua deciziile clinice."],
+  "Запросите письменную информацию о процедуре, её рисках, стоимости и последующем наблюдении.": ["Request written information about the procedure, risks, costs, and follow-up.", "Solicitați informații scrise despre procedură, riscuri, costuri și monitorizarea ulterioară."],
+  "Обсудите поездку с лечащим врачом ребёнка и получите независимое медицинское мнение.": ["Discuss travel with your child’s treating doctor and seek an independent medical opinion.", "Discutați călătoria cu medicul curant al copilului și solicitați o opinie medicală independentă."],
+  "Не принимайте решение на основании обещаний гарантированного результата или отдельных отзывов.": ["Do not make a decision based on promises of guaranteed results or individual testimonials.", "Nu luați o decizie pe baza promisiunilor de rezultate garantate sau a unor mărturii individuale."],
+  "Что известно о терапии стволовыми клетками при аутизме?": ["What is known about stem-cell therapy for autism?", "Ce se știe despre terapia cu celule stem pentru autism?"],
+  "В научной среде изучаются различные клеточные методы и предполагаемые механизмы их действия. Однако предполагаемые эффекты — например, влияние на воспалительные процессы или нервные связи — не означают, что клиническая польза для детей с РАС доказана. Результаты ограниченных исследований и сообщения родителей сами по себе не подтверждают эффективность лечения.": ["Researchers are studying different cell-based approaches and possible mechanisms. However, proposed effects—for example, on inflammation or neural connections—do not mean that clinical benefit for children with ASD has been proven. Limited study results and parent reports alone do not establish that a treatment is effective.", "Cercetătorii studiază diferite abordări celulare și mecanisme posibile. Totuși, efectele presupuse — de exemplu asupra inflamației sau conexiunilor neuronale — nu înseamnă că beneficiul clinic pentru copiii cu TSA a fost demonstrat. Rezultatele studiilor limitate și relatările părinților nu dovedesc singure eficacitatea tratamentului."],
+  "Если семье предлагают такую процедуру, важно выяснить, какие именно клетки используются, откуда они получены, как контролируются качество и безопасность, какие осложнения возможны и кто будет оказывать помощь при их возникновении. Эти вопросы следует подробно обсудить с независимым специалистом.": ["If a family is offered this procedure, ask what cells are used and where they come from, how quality and safety are monitored, what complications may occur, and who will provide care if they do. Discuss these questions in detail with an independent specialist.", "Dacă unei familii i se propune această procedură, este important să afle ce celule sunt folosite și de unde provin, cum sunt monitorizate calitatea și siguranța, ce complicații pot apărea și cine va oferi ajutor în astfel de cazuri. Discutați aceste întrebări în detaliu cu un specialist independent."],
+  "Как помогает Medical Concierge?": ["How can Medical Concierge help?", "Cum vă poate ajuta Medical Concierge?"],
+  "Поездка за границу для получения медицинской помощи может быть сложной, особенно когда речь идёт о здоровье ребёнка. Medical Concierge Group помогает с организационными вопросами и коммуникацией с клиниками:": ["Travelling abroad for medical care can be challenging, especially when a child’s health is involved. Medical Concierge Group can help with arrangements and communication with clinics:", "Călătoria în străinătate pentru îngrijire medicală poate fi dificilă, mai ales când este vorba despre sănătatea unui copil. Medical Concierge Group poate ajuta cu organizarea și comunicarea cu clinicile:"],
+  "Персональная консультация: организация контакта со специалистами для первичной оценки запроса.": ["Personal consultation: arranging contact with specialists for an initial review of your enquiry.", "Consultație personalizată: organizarea contactului cu specialiștii pentru o evaluare inițială a solicitării."],
+  "Организация поездки: помощь с планированием визита, перелётом и жильём.": ["Travel arrangements: help planning your visit, flights, and accommodation.", "Organizarea călătoriei: ajutor pentru planificarea vizitei, zborului și cazării."],
+  "Координация с клиниками: помощь с записью и согласованием медицинских обследований.": ["Clinic coordination: help with appointments and coordinating medical assessments.", "Coordonarea cu clinicile: ajutor pentru programări și coordonarea evaluărilor medicale."],
+  "Языковая поддержка: содействие в общении семьи с медицинским персоналом.": ["Language support: assistance with communication between your family and medical staff.", "Sprijin lingvistic: asistență în comunicarea familiei cu personalul medical."],
+  "Последующее сопровождение: помощь в организации связи с клиникой после поездки.": ["Follow-up coordination: help arranging communication with the clinic after your trip.", "Coordonare ulterioară: ajutor pentru organizarea comunicării cu clinica după călătorie."],
+  "Обсудите варианты помощи со специалистом": ["Discuss care options with a specialist", "Discutați opțiunile de îngrijire cu un specialist"],
+  "Если вы рассматриваете медицинскую помощь ребёнку в Турции, обсудите возможные варианты с его лечащим врачом и запросите независимую оценку. Medical Concierge Group может помочь с организацией консультации и поездки, но решение о лечении должно приниматься семьёй совместно с квалифицированными медицинскими специалистами.": ["If you are considering medical care for your child in Türkiye, discuss the options with their treating doctor and seek an independent assessment. Medical Concierge Group can help arrange a consultation and trip, but treatment decisions should be made by the family together with qualified medical professionals.", "Dacă luați în considerare îngrijirea medicală a copilului în Turcia, discutați opțiunile cu medicul curant și solicitați o evaluare independentă. Medical Concierge Group poate ajuta la organizarea consultației și călătoriei, însă deciziile privind tratamentul trebuie luate de familie împreună cu specialiști medicali calificați."],
+  "Нужна помощь с организацией консультации?": ["Need help arranging a consultation?", "Aveți nevoie de ajutor pentru organizarea unei consultații?"],
+  "Свяжитесь с нами, чтобы обсудить организационные вопросы и доступные варианты сопровождения.": ["Contact us to discuss arrangements and available support options.", "Contactați-ne pentru a discuta organizarea și opțiunile de sprijin disponibile."],
+  "Эксклюзивные методы лечения онкологии в Турции: руководство для пациентов": ["Cancer Treatment in Türkiye: A Patient Guide", "Tratamentul cancerului în Turcia: ghid pentru pacienți"],
+  "Если вы или ваш близкий человек рассматриваете лечение онкологического заболевания в Турции, важно получить индивидуальную консультацию. Medical Concierge Group помогает организовать медицинские консультации и сопровождает пациентов при взаимодействии с клиниками.": ["If you or someone close to you is considering cancer care in Türkiye, it is important to receive an individual consultation. Medical Concierge Group helps arrange medical consultations and supports patients in communicating with clinics.", "Dacă dumneavoastră sau o persoană apropiată luați în considerare tratamentul oncologic în Turcia, este important să primiți o consultație individuală. Medical Concierge Group ajută la organizarea consultațiilor medicale și sprijină pacienții în comunicarea cu clinicile."],
+  "Если вы или ваш близкий человек задумываетесь о лечении онкологии в Турции, важно начать с консультации квалифицированного онколога. Medical Concierge Group помогает пациентам с организационными вопросами медицинского туризма и координацией обращения в клиники.": ["If you or someone close to you is considering cancer treatment in Türkiye, start by consulting a qualified oncologist. Medical Concierge Group helps patients with medical-travel arrangements and coordinating enquiries to clinics.", "Dacă dumneavoastră sau o persoană apropiată luați în considerare tratamentul cancerului în Turcia, începeți cu o consultație la un medic oncolog calificat. Medical Concierge Group ajută pacienții cu organizarea călătoriei medicale și coordonarea solicitărilor către clinici."],
+  "Важно: методы лечения подбираются индивидуально — с учётом диагноза, стадии заболевания, результатов обследований и общего состояния пациента. Информация в статье носит общий характер и не заменяет консультацию онколога или второго независимого специалиста. Не откладывайте назначенное лечение, опираясь только на материалы сайта.": ["Important: treatment is selected individually, taking into account the diagnosis, disease stage, test results, and the patient’s overall health. This article provides general information and does not replace advice from an oncologist or an independent second specialist. Do not delay prescribed treatment based only on website content.", "Important: tratamentul este ales individual, ținând cont de diagnostic, stadiul bolii, rezultatele investigațiilor și starea generală a pacientului. Acest articol oferă informații generale și nu înlocuiește consultația unui oncolog sau a unui al doilea specialist independent. Nu amânați tratamentul recomandat bazându-vă doar pe informațiile de pe site."],
+  "В Турции работают медицинские учреждения, предоставляющие онкологическую помощь. В зависимости от конкретного диагноза и медицинских показаний врач может рассмотреть такие методы, как хирургическое лечение, химиотерапия, лучевая терапия, таргетная или иная лекарственная терапия. Доступность и целесообразность каждого метода необходимо обсуждать с лечащей командой.": ["Medical facilities in Türkiye provide oncology care. Depending on the diagnosis and medical indications, a doctor may consider surgery, chemotherapy, radiotherapy, targeted therapy, or other medicines. The availability and suitability of each option should be discussed with the treating team.", "Instituțiile medicale din Turcia oferă îngrijire oncologică. În funcție de diagnostic și indicațiile medicale, medicul poate lua în considerare intervenția chirurgicală, chimioterapia, radioterapia, terapia țintită sau alte medicamente. Disponibilitatea și potrivirea fiecărei opțiuni trebuie discutate cu echipa medicală curantă."],
+  "При выборе лечения важно запросить подробное объяснение диагноза и предложенного плана, ожидаемой пользы и возможных рисков, альтернативных вариантов и сроков. Попросите клинику уточнить, какие обследования понадобятся, кто будет вести лечение и как будет организовано наблюдение после возвращения домой. При необходимости можно получить второе медицинское мнение и передать специалистам копии медицинских документов.": ["When considering treatment, ask for a clear explanation of the diagnosis and proposed plan, expected benefits and possible risks, alternatives, and timing. Ask the clinic which tests are needed, who will oversee care, and how follow-up will be arranged after you return home. You may seek a second medical opinion and share copies of your records with specialists.", "Atunci când analizați tratamentul, solicitați o explicație clară a diagnosticului și planului propus, a beneficiilor așteptate și riscurilor posibile, a alternativelor și a termenelor. Întrebați clinica ce investigații sunt necesare, cine va coordona tratamentul și cum va fi organizată monitorizarea după întoarcerea acasă. Puteți solicita o a doua opinie medicală și transmite specialiștilor copii ale documentelor medicale."],
+  "Medical Concierge Group помогает координировать процесс обращения за медицинской помощью за рубежом. Команда может содействовать в организации поездки и проживания, записи на консультации и коммуникации с клиникой. Медицинские решения, назначение процедур и оценку их возможных результатов принимают пациент и его лечащие специалисты.": ["Medical Concierge Group helps coordinate access to care abroad. The team can assist with travel and accommodation arrangements, consultation appointments, and communication with the clinic. Medical decisions, treatment recommendations, and assessment of possible outcomes are made by patients and their treating professionals.", "Medical Concierge Group ajută la coordonarea accesului la îngrijire medicală în străinătate. Echipa poate sprijini organizarea călătoriei și cazării, programarea consultațiilor și comunicarea cu clinica. Deciziile medicale, recomandările de tratament și evaluarea rezultatelor posibile aparțin pacienților și specialiștilor curanți."],
+  "Если вы рассматриваете лечение онкологического заболевания в Турции, обсудите этот вариант со своим лечащим врачом и запросите план консультации у профильного специалиста. Заранее уточните стоимость, содержание предлагаемой помощи и дальнейшее наблюдение.": ["If you are considering cancer care in Türkiye, discuss this option with your treating doctor and request a consultation plan from a relevant specialist. Clarify the costs, what the proposed care includes, and the follow-up arrangements in advance.", "Dacă luați în considerare tratamentul oncologic în Turcia, discutați această opțiune cu medicul curant și solicitați un plan de consultație de la un specialist relevant. Clarificați din timp costurile, serviciile incluse și organizarea monitorizării ulterioare."],
+  "Свяжитесь с нами, чтобы обсудить организационные вопросы и координацию поездки.": ["Contact us to discuss arrangements and travel coordination.", "Contactați-ne pentru a discuta organizarea și coordonarea călătoriei."],
+  "Пересадка волос в Турции": ["Hair Transplant in Türkiye", "Transplantul de păr în Turcia"],
+  "За последнее десятилетие Турция стала популярным направлением для людей, рассматривающих пересадку волос. Перед поездкой важно получить индивидуальную консультацию, разобраться в предлагаемых методах и проверить квалификацию медицинской команды и клиники.": ["Over the past decade, Türkiye has become a popular destination for people considering hair transplantation. Before travelling, seek an individual consultation, understand the methods being offered, and verify the qualifications of the medical team and clinic.", "În ultimul deceniu, Turcia a devenit o destinație populară pentru persoanele care iau în considerare transplantul de păr. Înainte de călătorie, solicitați o consultație individuală, informați-vă despre metodele propuse și verificați calificările echipei medicale și ale clinicii."],
+  "Турцию часто рассматривают для проведения пересадки волос. Современные медицинские учреждения могут предлагать различные методики, однако подходящий вариант, ожидаемый результат и стоимость зависят от индивидуальной ситуации и должны обсуждаться с квалифицированным врачом.": ["Türkiye is often considered for hair transplantation. Medical facilities may offer different techniques, but the suitable option, expected outcome, and cost depend on each individual and should be discussed with a qualified doctor.", "Turcia este adesea luată în considerare pentru transplantul de păr. Instituțiile medicale pot oferi tehnici diferite, însă opțiunea potrivită, rezultatul așteptat și costul depind de situația fiecărei persoane și trebuie discutate cu un medic calificat."],
+  "Важно: пересадка волос — медицинская процедура, и она подходит не всем. Возможны риски и ограничения; результат не гарантирован. До принятия решения обсудите показания, альтернативы, возможные осложнения и послеоперационный уход с врачом, который будет проводить процедуру.": ["Important: hair transplantation is a medical procedure and is not suitable for everyone. It carries potential risks and limitations, and results are not guaranteed. Before deciding, discuss indications, alternatives, possible complications, and aftercare with the doctor who will perform the procedure.", "Important: transplantul de păr este o procedură medicală și nu este potrivit pentru toată lumea. Există riscuri și limitări, iar rezultatul nu este garantat. Înainte de a decide, discutați indicațiile, alternativele, complicațiile posibile și îngrijirea postoperatorie cu medicul care va efectua procedura."],
+  "Почему пациенты рассматривают Турцию?": ["Why do patients consider Türkiye?", "De ce iau pacienții în considerare Turcia?"],
+  "При выборе клиники оценивайте не только цену и расположение, но и то, кто проводит медицинскую оценку, планирует и выполняет процедуру, а также обеспечивает последующее наблюдение. Обсудите следующие вопросы:": ["When choosing a clinic, consider more than price and location. Check who assesses your health, plans and performs the procedure, and provides follow-up. Discuss the following:", "La alegerea clinicii, evaluați nu doar prețul și locația, ci și cine efectuează evaluarea medicală, planifică și realizează procedura și asigură monitorizarea ulterioară. Discutați următoarele:"],
+  "Опыт и квалификация: уточните образование и опыт врача, который будет лично проводить процедуру.": ["Experience and qualifications: check the education and experience of the doctor who will personally perform the procedure.", "Experiență și calificări: verificați studiile și experiența medicului care va efectua personal procedura."],
+  "Методика: FUE и DHI — названия техник, которые могут предлагаться клиниками. Врач должен объяснить, подходят ли они в вашем случае и чем отличаются возможные риски и ограничения.": ["Technique: FUE and DHI are techniques that clinics may offer. A doctor should explain whether either is suitable for you and how their potential risks and limitations differ.", "Tehnică: FUE și DHI sunt tehnici pe care clinicile le pot oferi. Medicul trebuie să explice dacă vi se potrivesc și prin ce diferă riscurile și limitările posibile."],
+  "Стоимость: запросите полный письменный перечень включённых услуг и возможных дополнительных расходов.": ["Cost: request a complete written list of included services and any possible additional expenses.", "Cost: solicitați o listă completă, în scris, a serviciilor incluse și a eventualelor cheltuieli suplimentare."],
+  "Уход и наблюдение: выясните, как организован послеоперационный уход и к кому обращаться при осложнениях, в том числе после возвращения домой.": ["Aftercare and follow-up: find out how post-operative care is arranged and whom to contact if complications arise, including after you return home.", "Îngrijire și monitorizare: aflați cum este organizată îngrijirea postoperatorie și pe cine să contactați în caz de complicații, inclusiv după întoarcerea acasă."],
+  "Как Medical Concierge помогает с организацией?": ["How can Medical Concierge help with arrangements?", "Cum ajută Medical Concierge la organizare?"],
+  "Поездка за границу для медицинской процедуры требует планирования. Medical Concierge Group может помочь с организационными вопросами и коммуникацией с клиникой:": ["A medical trip abroad requires planning. Medical Concierge Group can help with arrangements and communication with the clinic:", "O călătorie în străinătate pentru o procedură medicală necesită planificare. Medical Concierge Group poate ajuta cu organizarea și comunicarea cu clinica:"],
+  "Координация консультации: помогаем связаться с клиникой для первичной оценки запроса и получить информацию о следующих шагах.": ["Consultation coordination: we help contact the clinic for an initial review of your enquiry and information about next steps.", "Coordonarea consultației: vă ajutăm să contactați clinica pentru evaluarea inițială a solicitării și informații despre pașii următori."],
+  "Планирование поездки: содействуем в организации визита, проживания и транспорта.": ["Trip planning: assistance with arranging your visit, accommodation, and transport.", "Planificarea călătoriei: sprijin pentru organizarea vizitei, cazării și transportului."],
+  "Записи и коммуникация: помогаем согласовать расписание консультаций и уточнить организационные детали.": ["Appointments and communication: help coordinating consultation schedules and clarifying practical details.", "Programări și comunicare: ajutor pentru coordonarea consultațiilor și clarificarea detaliilor organizatorice."],
+  "Языковая поддержка: при необходимости содействуем в организации перевода при общении с клиникой.": ["Language support: if needed, we can help arrange interpretation when communicating with the clinic.", "Sprijin lingvistic: la nevoie, putem ajuta la organizarea interpretării în comunicarea cu clinica."],
+  "Последующее наблюдение: помогаем уточнить у клиники порядок связи после процедуры и рекомендации на период восстановления.": ["Follow-up: we help clarify how to contact the clinic after the procedure and obtain recovery guidance.", "Monitorizare ulterioară: vă ajutăm să clarificați cum puteți contacta clinica după procedură și să obțineți recomandări pentru recuperare."],
+  "Что уточнить до поездки": ["What to clarify before travelling", "Ce trebuie clarificat înainte de călătorie"],
+  "Попросите клинику заранее сообщить, кто именно будет проводить процедуру, какие обследования необходимы, что входит в стоимость, какие возможны осложнения и сколько времени нужно оставаться рядом с клиникой. Не полагайтесь только на рекламные фотографии или обещания гарантированного результата; при сомнениях получите независимое медицинское мнение.": ["Ask the clinic in advance who will perform the procedure, which tests are needed, what the price includes, what complications may occur, and how long you should stay near the clinic. Do not rely only on promotional photos or promises of guaranteed results; seek an independent medical opinion if you have concerns.", "Întrebați clinica din timp cine va efectua procedura, ce investigații sunt necesare, ce include prețul, ce complicații pot apărea și cât timp trebuie să rămâneți în apropierea clinicii. Nu vă bazați doar pe fotografii promoționale sau promisiuni de rezultate garantate; solicitați o opinie medicală independentă dacă aveți îndoieli."],
+  "Обсудите свои варианты со специалистом": ["Discuss your options with a specialist", "Discutați opțiunile cu un specialist"],
+  "Решение о пересадке волос следует принимать после медицинской консультации с учётом причины выпадения волос, состояния здоровья и ожиданий пациента. Medical Concierge Group может помочь с координацией консультации и организацией поездки, а медицинские рекомендации и решения принимает квалифицированный специалист совместно с пациентом.": ["The decision to have a hair transplant should follow a medical consultation that considers the cause of hair loss, your health, and your expectations. Medical Concierge Group can help coordinate a consultation and trip; medical advice and decisions are made by a qualified professional together with the patient.", "Decizia de a face un transplant de păr trebuie luată după o consultație medicală care ține cont de cauza căderii părului, starea de sănătate și așteptările pacientului. Medical Concierge Group poate ajuta la coordonarea consultației și călătoriei; recomandările și deciziile medicale sunt luate de un specialist calificat împreună cu pacientul."],
+  "Косметическая хирургия в Турции: ваш полный путеводитель": ["Cosmetic Surgery in Türkiye: A Patient Guide", "Chirurgia estetică în Turcia: ghid pentru pacienți"],
+  "Вы когда-нибудь задумывались об операции, но не знали, с чего начать? Возможно, вы слышали о медицинском туризме в Турции и заинтересовались идеей сочетания медицинской помощи с поездкой за границу.": ["Have you considered surgery but were unsure where to start? You may have heard about medical travel to Türkiye and wondered about combining medical care with a trip abroad.", "V-ați gândit vreodată la o intervenție chirurgicală, dar nu ați știut de unde să începeți? Poate ați auzit despre turismul medical în Turcia și despre posibilitatea de a combina îngrijirea medicală cu o călătorie în străinătate."],
+  "Пластическая и косметическая хирургия включает широкий спектр процедур. При выборе лечения важно оценивать не только стоимость, но и медицинские показания, квалификацию хирурга, безопасность клиники и план послеоперационного наблюдения. Medical Concierge Group помогает пациентам с организационными вопросами обращения в клиники.": ["Plastic and cosmetic surgery includes a wide range of procedures. When considering treatment, assess not only the cost but also medical indications, the surgeon’s qualifications, clinic safety, and the post-operative follow-up plan. Medical Concierge Group helps patients with practical arrangements when contacting clinics.", "Chirurgia plastică și estetică include o gamă largă de proceduri. Atunci când analizați tratamentul, evaluați nu doar costul, ci și indicațiile medicale, calificările chirurgului, siguranța clinicii și planul de monitorizare postoperatorie. Medical Concierge Group ajută pacienții cu aspectele organizatorice ale contactării clinicilor."],
+  "Важно: любая операция связана с рисками, а индивидуальный результат не может быть гарантирован. Обсудите ожидаемую пользу, возможные осложнения, альтернативы и восстановление с квалифицированным пластическим хирургом. Решение о процедуре принимайте без спешки и после получения медицинской консультации.": ["Important: every operation carries risks, and individual results cannot be guaranteed. Discuss expected benefits, possible complications, alternatives, and recovery with a qualified plastic surgeon. Take your time and make a decision only after receiving medical advice.", "Important: orice intervenție chirurgicală implică riscuri, iar rezultatele individuale nu pot fi garantate. Discutați beneficiile așteptate, complicațiile posibile, alternativele și recuperarea cu un chirurg plastician calificat. Luați o decizie fără grabă și numai după ce primiți sfatul medical."],
+  "Турция является одним из направлений, куда пациенты обращаются за пластической хирургией. Стоимость процедур может отличаться в зависимости от клиники, вида операции и индивидуального плана. Сравнивая предложения, уточните, что именно включено в цену и какие расходы могут возникнуть дополнительно. Стоимость сама по себе не подтверждает качество или безопасность медицинской помощи.": ["Türkiye is one destination patients consider for plastic surgery. Costs vary by clinic, procedure, and individual plan. When comparing offers, clarify exactly what the price includes and what additional costs may arise. Price alone does not establish the quality or safety of care.", "Turcia este una dintre destinațiile luate în considerare de pacienții care caută chirurgie plastică. Costurile variază în funcție de clinică, intervenție și planul individual. Când comparați ofertele, clarificați ce include prețul și ce costuri suplimentare pot apărea. Prețul, de unul singur, nu confirmă calitatea sau siguranța îngrijirii."],
+  "Что важно проверить при выборе клиники и хирурга": ["What to check when choosing a clinic and surgeon", "Ce trebuie verificat la alegerea clinicii și chirurgului"],
+  "Квалификация специалиста: уточните образование, специализацию и опыт хирурга именно в предлагаемой процедуре.": ["Surgeon’s qualifications: check the surgeon’s education, specialty, and experience with the specific procedure.", "Calificările specialistului: verificați studiile, specializarea și experiența chirurgului pentru procedura respectivă."],
+  "Медицинская оценка: убедитесь, что до операции врач изучит историю здоровья, обсудит показания и оценит возможные противопоказания.": ["Medical assessment: make sure the doctor reviews your medical history, discusses indications, and assesses possible contraindications before surgery.", "Evaluare medicală: asigurați-vă că medicul analizează istoricul medical, discută indicațiile și evaluează posibilele contraindicații înainte de intervenție."],
+  "План процедуры: попросите объяснить метод, предполагаемые ограничения, альтернативы, риски и ожидаемый период восстановления.": ["Procedure plan: ask about the method, expected limitations, alternatives, risks, and recovery period.", "Planul procedurii: solicitați explicații despre metodă, limitări anticipate, alternative, riscuri și perioada de recuperare."],
+  "Условия клиники: выясните, где проводится операция, кто отвечает за анестезию и как организована помощь при осложнениях.": ["Clinic arrangements: find out where the operation takes place, who provides anaesthesia, and how complications are managed.", "Condițiile clinicii: aflați unde are loc intervenția, cine răspunde de anestezie și cum este organizată asistența în caz de complicații."],
+  "Последующее наблюдение: уточните, сколько времени потребуется оставаться в стране и с кем связаться после возвращения домой.": ["Follow-up: ask how long you should remain in the country and whom to contact after returning home.", "Monitorizare ulterioară: întrebați cât timp trebuie să rămâneți în țară și pe cine să contactați după întoarcerea acasă."],
+  "Полная стоимость: запросите письменную смету с перечнем медицинских и организационных услуг, а также возможных дополнительных расходов.": ["Total cost: request a written estimate listing medical and coordination services, as well as any possible additional expenses.", "Costul total: solicitați o estimare scrisă cu serviciile medicale și organizatorice incluse, precum și eventualele cheltuieli suplimentare."],
+  "Роль услуг Medical Concierge": ["The role of Medical Concierge", "Rolul serviciilor Medical Concierge"],
+  "Поездка за границу для операции может требовать координации медицинских и бытовых вопросов. Medical Concierge Group может помочь с организационной частью процесса:": ["Travelling abroad for surgery may require coordination of medical and practical arrangements. Medical Concierge Group can help with the organizational aspects:", "Călătoria în străinătate pentru o intervenție poate necesita coordonarea aspectelor medicale și practice. Medical Concierge Group poate ajuta cu partea organizatorică:"],
+  "Связь с клиникой: помогаем организовать первичную консультацию и передать клинике необходимую информацию.": ["Clinic liaison: we help arrange an initial consultation and share the necessary information with the clinic.", "Legătura cu clinica: ajutăm la organizarea consultației inițiale și transmiterea informațiilor necesare către clinică."],
+  "Координация консультаций: содействуем в записи и уточнении плана визита.": ["Consultation coordination: assistance with appointments and clarifying the visit plan.", "Coordonarea consultațiilor: sprijin pentru programări și clarificarea planului vizitei."],
+  "Поездка и проживание: помогаем спланировать логистику и уточнить доступные варианты размещения и транспорта.": ["Travel and accommodation: help planning logistics and checking available accommodation and transport options.", "Călătorie și cazare: ajutor pentru planificarea logisticii și identificarea opțiunilor disponibile de cazare și transport."],
+  "Языковая поддержка: содействуем в организации перевода при общении с медицинской командой.": ["Language support: assistance arranging interpretation when communicating with the medical team.", "Sprijin lingvistic: ajutor pentru organizarea interpretării în comunicarea cu echipa medicală."],
+  "Организационная связь после процедуры: помогаем уточнить у клиники порядок получения рекомендаций и последующего наблюдения.": ["Post-procedure coordination: we help clarify how to obtain the clinic’s recommendations and arrange follow-up.", "Coordonare după procedură: ajutăm la clarificarea modului de primire a recomandărilor clinicii și organizarea monitorizării ulterioare."],
+  "Организатор поездки не заменяет хирурга и не принимает медицинские решения: показания к операции, выбор метода и оценку рисков определяет квалифицированный врач совместно с пациентом.": ["A travel coordinator does not replace a surgeon or make medical decisions. A qualified doctor and the patient determine indications, method, and risk assessment together.", "Coordonatorul călătoriei nu înlocuiește chirurgul și nu ia decizii medicale. Indicațiile, metoda și evaluarea riscurilor sunt stabilite împreună de medicul calificat și pacient."],
+  "Подготовьтесь к информированному решению": ["Prepare to make an informed decision", "Pregătiți-vă pentru o decizie informată"],
+  "Перед поездкой соберите медицинские документы и подготовьте вопросы о процедуре, возможных рисках и восстановлении. При сомнениях получите независимое медицинское мнение. Не полагайтесь только на рекламные материалы, фотографии «до и после» или обещания гарантированного результата.": ["Before travelling, gather your medical records and prepare questions about the procedure, possible risks, and recovery. Seek an independent medical opinion if you have concerns. Do not rely only on promotional materials, before-and-after photos, or promises of guaranteed results.", "Înainte de călătorie, adunați documentele medicale și pregătiți întrebări despre procedură, riscuri posibile și recuperare. Solicitați o opinie medicală independentă dacă aveți îndoieli. Nu vă bazați doar pe materiale promoționale, fotografii înainte și după sau promisiuni de rezultate garantate."],
+  "Если вы рассматриваете пластическую хирургию в Турции, Medical Concierge Group может помочь с организацией консультации и поездки. Обсудите медицинские варианты с квалифицированным хирургом и убедитесь, что вам понятны план лечения, риски и условия последующего ухода.": ["If you are considering plastic surgery in Türkiye, Medical Concierge Group can help arrange a consultation and trip. Discuss medical options with a qualified surgeon and make sure you understand the care plan, risks, and follow-up arrangements.", "Dacă luați în considerare chirurgia plastică în Turcia, Medical Concierge Group poate ajuta la organizarea consultației și călătoriei. Discutați opțiunile medicale cu un chirurg calificat și asigurați-vă că înțelegeți planul de îngrijire, riscurile și monitorizarea ulterioară."],
+  "Свяжитесь с нами, чтобы обсудить организационные вопросы и сопровождение поездки.": ["Contact us to discuss arrangements and travel support.", "Contactați-ne pentru a discuta organizarea și sprijinul pentru călătorie."]
+};
+
+const articleTitles = {
+  "Косметическая хирургия в Турции — Medical Concierge Group": ["Cosmetic Surgery in Türkiye — Medical Concierge Group", "Chirurgie estetică în Turcia — Medical Concierge Group"],
+  "Лечение аутизма стволовыми клетками в Турции — Medical Concierge Group": ["Stem-Cell Therapy for Autism in Türkiye — Medical Concierge Group", "Terapia cu celule stem pentru autism în Turcia — Medical Concierge Group"],
+  "Пересадка волос в Турции — Medical Concierge Group": ["Hair Transplant in Türkiye — Medical Concierge Group", "Transplant de păr în Turcia — Medical Concierge Group"],
+  "Пересадка почек в Турции: что вам нужно знать — Medical Concierge Group": ["Kidney Transplant in Türkiye: What You Need to Know — Medical Concierge Group", "Transplant renal în Turcia: ce trebuie să știți — Medical Concierge Group"],
+  "Методы лечения онкологии в Турции — Medical Concierge Group": ["Cancer Treatment in Türkiye — Medical Concierge Group", "Tratamentul cancerului în Turcia — Medical Concierge Group"]
+};
+
+Object.assign(languageCopy, {
+  "Открыть меню": ["Open menu", "Deschide meniul"],
+  "Главное меню": ["Main menu", "Meniul principal"],
+  "ТРАНСПЛАНТАЦИЯ • 5 МИН": ["TRANSPLANTATION • 5 MIN", "TRANSPLANT • 5 MIN"],
+  "ВОССТАНОВЛЕНИЕ ВОЛОС • 5 МИН": ["HAIR RESTORATION • 5 MIN", "RESTAURAREA PĂRULUI • 5 MIN"],
+  "ОНКОЛОГИЯ • 5 МИН": ["ONCOLOGY • 5 MIN", "ONCOLOGIE • 5 MIN"],
+  "ДЕТСКОЕ ЗДОРОВЬЕ • 6 МИН": ["CHILDREN’S HEALTH • 6 MIN", "SĂNĂTATEA COPIILOR • 6 MIN"],
+  "ПЛАСТИЧЕСКАЯ ХИРУРГИЯ • 6 МИН": ["PLASTIC SURGERY • 6 MIN", "CHIRURGIE PLASTICĂ • 6 MIN"],
+  "Косметическая хирургия в Турции: ваш полный путеводитель": ["Cosmetic Surgery in Türkiye: A Patient Guide", "Chirurgia estetică în Turcia: ghid pentru pacienți"],
+  "Лечение аутизма с помощью трансплантации стволовых клеток в Турции: прорыв в медицине": ["Stem-Cell Therapy for Autism in Türkiye: What Families Should Know", "Terapia cu celule stem pentru autism în Turcia: ce trebuie să știe familiile"],
+  "Эксклюзивные методы лечения онкологии в Турции: руководство для пациентов": ["Cancer Treatment in Türkiye: A Patient Guide", "Tratamentul cancerului în Turcia: ghid pentru pacienți"],
+  "Что важно знать о терапии стволовыми клетками, её статусе и медицинском сопровождении.": ["What to know about stem-cell therapy, its current status, and medical coordination.", "Ce trebuie să știți despre terapia cu celule stem, statutul acesteia și coordonarea medicală."],
+  "Как разобраться в вариантах лечения и организовать консультацию за рубежом.": ["How to understand treatment options and arrange a consultation abroad.", "Cum să înțelegeți opțiunile de tratament și să organizați o consultație în străinătate."],
+  "Пластическая хирургия в Турции: ваш полный путеводитель": ["Plastic Surgery in Türkiye: A Patient Guide", "Chirurgia plastică în Turcia: ghid pentru pacienți"],
+  "СТВОЛОВЫЕ КЛЕТКИ • 6 МИН": ["STEM CELLS • 6 MIN", "CELULE STEM • 6 MIN"],
+  "Косметическая хирургия в Турции — Medical Concierge Group": ["Cosmetic Surgery in Türkiye — Medical Concierge Group", "Chirurgie estetică în Turcia — Medical Concierge Group"],
+  "Лечение аутизма стволовыми клетками в Турции — Medical Concierge Group": ["Stem-Cell Therapy for Autism in Türkiye — Medical Concierge Group", "Terapia cu celule stem pentru autism în Turcia — Medical Concierge Group"],
+  "Пересадка волос в Турции — Medical Concierge Group": ["Hair Transplant in Türkiye — Medical Concierge Group", "Transplant de păr în Turcia — Medical Concierge Group"],
+  "Пересадка почек в Турции: что вам нужно знать — Medical Concierge Group": ["Kidney Transplant in Türkiye: What You Need to Know — Medical Concierge Group", "Transplant renal în Turcia: ce trebuie să știți — Medical Concierge Group"],
+  "Методы лечения онкологии в Турции — Medical Concierge Group": ["Cancer Treatment in Türkiye — Medical Concierge Group", "Tratamentul cancerului în Turcia — Medical Concierge Group"],
+  "Medical Concierge Group — медицинская координация и сопровождение пациентов.": ["Medical Concierge Group — medical coordination and patient support.", "Medical Concierge Group — coordonare medicală și sprijin pentru pacienți."],
+  "Новая заявка с сайта Medical Concierge": ["New enquiry from the Medical Concierge website", "Solicitare nouă de pe site-ul Medical Concierge"],
+  "Нужна помощь с организацией консультации?": ["Need help arranging a consultation?", "Aveți nevoie de ajutor pentru organizarea unei consultații?"],
+  "Свяжитесь с нами, чтобы обсудить организационные вопросы и сопровождение поездки.": ["Contact us to discuss arrangements and travel support.", "Contactați-ne pentru a discuta organizarea și sprijinul pentru călătorie."]
+});
+
+const elementSelector = "h1,h2,h3,h4,p,li,a,cite,button,span,.eyebrow,.stats span,.photo-card small";
+const originalMarkup = new WeakMap();
+const originalText = new WeakMap();
+const candidates = [...document.querySelectorAll(elementSelector)];
+candidates.forEach(element => {
+  originalMarkup.set(element, element.innerHTML);
+  originalText.set(element, element.textContent.trim().replace(/\s+/g, " "));
+});
+const originalPlaceholders = new WeakMap();
+document.querySelectorAll("input[placeholder],textarea[placeholder]").forEach(input => {
+  originalPlaceholders.set(input, input.getAttribute("placeholder"));
+});
+const originalLabelTextNodes = [];
+document.querySelectorAll("label").forEach(label => {
+  [...label.childNodes].filter(node => node.nodeType === Node.TEXT_NODE && node.nodeValue.trim()).forEach(node => {
+    originalLabelTextNodes.push({ node, source: node.nodeValue });
+  });
+});
+const originalTitle = document.title;
+const originalDescription = document.querySelector('meta[name="description"]')?.content;
+const originalImageAlt = new WeakMap();
+document.querySelectorAll("img[alt]").forEach(image => originalImageAlt.set(image, image.alt));
+const originalSubject = document.querySelector('input[name="_subject"]')?.value;
+const originalTextNodes = [];
+const textWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+while (textWalker.nextNode()) {
+  const node = textWalker.currentNode;
+  if (node.nodeValue.trim()) originalTextNodes.push({node, source: node.nodeValue});
+}
+
+const translatePage = (language) => {
+  const slot = language === "en" ? 0 : 1;
+  candidates.forEach(element => {
+    if (!element.querySelector("input,svg,img,#year") && !element.querySelector(elementSelector)) {
+      element.innerHTML = originalMarkup.get(element);
+    }
+  });
+  candidates.forEach(element => {
+    const source = originalText.get(element);
+    const translated = language === "ru" ? undefined : languageCopy[source]?.[slot];
+    if (translated && !element.querySelector("input,svg,#year")) {
+      element.textContent = translated;
+    }
+  });
+  originalTextNodes.forEach(({node, source}) => {
+    if (!node.isConnected) return;
+    const translated = languageCopy[source.trim().replace(/\s+/g, " ")]?.[slot];
+    if (language === "ru") {
+      node.nodeValue = source;
+    } else if (translated) {
+      const leading = source.match(/^\s*/)[0];
+      const trailing = source.match(/\s*$/)[0];
+      node.nodeValue = `${leading}${translated}${trailing}`;
+    }
+  });
+  document.querySelectorAll(".copyright").forEach(element => {
+    const suffix = element.lastChild;
+    if (suffix?.nodeType !== Node.TEXT_NODE) return;
+    const source = "Все права защищены.";
+    suffix.nodeValue = language === "ru" ? ` ${source}` : ` ${languageCopy[source][slot]}`;
+  });
+  document.querySelectorAll("label").forEach(label => {
+    if (label.querySelector("input")) return;
+    const source = label.textContent.trim().replace(/\s+/g, " ");
+    const translated = language === "ru" ? undefined : languageCopy[source]?.[slot];
+    if (translated) label.textContent = translated;
+  });
+  originalLabelTextNodes.forEach(({node, source}) => {
+    if (!node.isConnected) return;
+    const translated = languageCopy[source.trim().replace(/\s+/g, " ")]?.[slot];
+    if (language === "ru") {
+      node.nodeValue = source;
+    } else if (translated) {
+      const leading = source.match(/^\s*/)[0];
+      const trailing = source.match(/\s*$/)[0];
+      node.nodeValue = `${leading}${translated}${trailing}`;
+    }
+  });
+  document.querySelectorAll(".contact-details .contact-item > span").forEach(element => {
+    const source = element.textContent.trim().replace(/\s+/g, " ");
+    const translated = language === "ru" ? undefined : languageCopy[source]?.[slot];
+    if (translated) element.textContent = translated;
+  });
+  document.querySelectorAll("input[placeholder],textarea[placeholder]").forEach(input => {
+    const source = originalPlaceholders.get(input);
+    input.setAttribute("placeholder", source);
+    const translated = languageCopy[source]?.[slot];
+    if (language !== "ru" && translated) input.setAttribute("placeholder", translated);
+  });
+  document.documentElement.lang = language;
+  document.title = language === "ru" ? originalTitle : (articleTitles[originalTitle]?.[slot] || originalTitle);
+  const description = document.querySelector('meta[name="description"]');
+  if (description && originalDescription) {
+    description.content = language === "ru" ? originalDescription : (languageCopy[originalDescription]?.[slot] || originalDescription);
+  }
+  document.querySelectorAll("img[alt]").forEach(image => {
+    const source = originalImageAlt.get(image);
+    if (source) image.alt = language === "ru" ? source : (languageCopy[source]?.[slot] || source);
+  });
+  const subject = document.querySelector('input[name="_subject"]');
+  if (subject && originalSubject) {
+    subject.value = language === "ru" ? originalSubject : (languageCopy[originalSubject]?.[slot] || originalSubject);
+  }
+  const closeButton = document.querySelector(".nav-close");
+  const menuButton = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav-links");
+  closeButton?.setAttribute("aria-label", language === "ru" ? "Закрыть меню" : language === "en" ? "Close menu" : "Închide meniul");
+  menuButton?.setAttribute("aria-label", language === "ru" ? "Открыть меню" : language === "en" ? "Open menu" : "Deschide meniul");
+  nav?.setAttribute("aria-label", language === "ru" ? "Главное меню" : language === "en" ? "Main menu" : "Meniul principal");
+  document.querySelector(".service-filters")?.setAttribute("aria-label", language === "ru" ? "Категории услуг" : language === "en" ? "Service categories" : "Categorii de servicii");
+  document.querySelectorAll(".language-select").forEach(select => {
+    select.setAttribute("aria-label", language === "ru" ? "Язык" : language === "en" ? "Language" : "Limba");
+  });
+  document.querySelectorAll(".social-links").forEach(element => {
+    element.setAttribute("aria-label", language === "ru" ? "Наши социальные сети" : language === "en" ? "Our social media" : "Rețelele noastre sociale");
+  });
+  document.querySelectorAll(".social-link").forEach(element => {
+    const platform = element.classList.contains("facebook") ? "Facebook" : element.classList.contains("instagram") ? "Instagram" : "Telegram";
+    const label = language === "ru" ? `${platform}, откроется в новой вкладке` : language === "en" ? `${platform}, opens in a new tab` : `${platform}, se deschide într-o filă nouă`;
+    element.setAttribute("aria-label", label);
+  });
+  document.querySelectorAll(".language-select").forEach(select => select.value = language);
+  localStorage.setItem("medicalConciergeLanguage", language);
+  window.currentSiteLanguage = language;
+};
+
+const languageSelects = document.querySelectorAll(".language-select");
+const savedLanguage = localStorage.getItem("medicalConciergeLanguage");
+const initialLanguage = ["ru", "en", "ro"].includes(savedLanguage) ? savedLanguage : "ru";
+translatePage(initialLanguage);
+languageSelects.forEach(select => {
+  select.addEventListener("change", () => translatePage(select.value));
+});
