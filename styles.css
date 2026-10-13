@@ -166,7 +166,7 @@ cite{display:block;margin-top:25px;font-size:12px;font-style:normal;color:var(--
 .contact .gold{color:#f1ca88}
 .contact-details{margin-top:40px;display:grid;gap:8px}
 .contact-details a,.contact-item{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.88)}
-.contact-details a{font:600 24px var(--serif)}
+.contact-details a{font:600 16px var(--sans)}
 .contact-item{font-size:13px;margin-top:10px}
 .contact-icon{width:17px;height:17px;flex:0 0 17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .contact-form{background:#fff;padding:40px;color:var(--ink)}
