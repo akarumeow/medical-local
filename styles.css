@@ -68,14 +68,14 @@ url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fi
 
 .services{background:#fff}
 .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.service-card{border:1px solid var(--line);padding:35px 30px;min-height:310px;position:relative;transition:.3s;background:#fff}
+.service-card{display:flex;flex-direction:column;border:1px solid var(--line);padding:35px 30px;min-height:310px;transition:.3s;background:#fff}
 .service-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
 .service-card:hover,.service-card:focus-within{background:var(--red);color:#fff;border-color:var(--red)}
 .service-card:hover p,.service-card:focus-within p{color:rgba(255,255,255,.78)}
 .service-icon{font-size:12px;letter-spacing:2px;color:var(--gold);margin-bottom:40px}
 .service-card h3{margin-bottom:15px}
 .service-card p{font-size:14px}
-.service-card a{position:absolute;bottom:28px;color:var(--gold);font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase}
+.service-card a{margin-top:auto;padding-top:28px;color:var(--gold);font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase}
 .service-card:hover a,.service-card:focus-within a{color:#f0cf98}
 
 .service-filters{display:flex;justify-content:center;align-items:stretch;gap:0;margin:0 auto 34px;border-bottom:1px solid var(--line);width:max-content;max-width:100%}
